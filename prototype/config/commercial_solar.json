@@ -1,0 +1,33 @@
+{
+  "version": "commercial-solar-v1",
+  "category": "Commercial Solar Installation",
+  "constraints": {
+    "budget_ceiling_cad": 260000,
+    "max_weeks": 16
+  },
+  "hard_constraints": [
+    { "id": "budget", "field": "price_cad", "op": "<=", "value": 260000,
+      "label": "within budget ceiling" },
+    { "id": "deadline", "field": "timeline_weeks", "op": "<=", "value": 16,
+      "label": "within 16-week limit", "when_present": true }
+  ],
+  "mandatory": [
+    { "id": "licence", "label": "Ontario electrical contractor licence",
+      "rule": "bidder_holds_licence_stated" },
+    { "id": "wsib_insurance", "label": "WSIB clearance and $5M liability insurance",
+      "rule": "wsib_and_insurance_stated" }
+  ],
+  "weighted": [
+    { "id": "experience", "label": "Relevant experience", "weight": 0.30, "type": "qualitative",
+      "bands": [[12, 100], [10, 90], [8, 80], [6, 70], [0, 50]] },
+    { "id": "price", "label": "Price", "weight": 0.25, "type": "numeric",
+      "bands_pct_of_ceiling": [[90, 100], [95, 80], [100, 60]] },
+    { "id": "timeline", "label": "Timeline", "weight": 0.15, "type": "numeric",
+      "bands_weeks": [[12, 100], [14, 80], [16, 60]] },
+    { "id": "warranty", "label": "Warranty", "weight": 0.15, "type": "numeric",
+      "bands_workmanship_years": [[4, 40], [9, 60], [11, 80], [999, 100]] },
+    { "id": "team", "label": "Team and approach", "weight": 0.15, "type": "qualitative",
+      "elements": ["named_lead", "named_crew", "safety_plan", "monitoring_plan"],
+      "bands_elements": [[4, 100], [3, 80], [2, 60], [1, 40], [0, 20]] }
+  ]
+}

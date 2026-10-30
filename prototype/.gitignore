@@ -1,0 +1,7 @@
+.env
+samples/
+audit.jsonl
+__pycache__/
+*.pyc
+.venv/
+.vscode

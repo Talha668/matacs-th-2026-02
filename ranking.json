@@ -1,0 +1,37 @@
+[
+  {
+    "proposal": "A",
+    "rank": 1,
+    "status": "ranked",
+    "score": 92,
+    "reason": "Clears every mandatory check, commits to 12 weeks, and fully evidences a named lead, crew, safety plan and monitoring, at $238,000."
+  },
+  {
+    "proposal": "E",
+    "rank": 2,
+    "status": "ranked",
+    "score": 86,
+    "reason": "Best warranty (12-year workmanship) and a complete team and monitoring plan; one week slower and $4,500 dearer than A."
+  },
+  {
+    "proposal": "D",
+    "rank": 3,
+    "status": "ranked",
+    "score": 73,
+    "reason": "Best price and near-best experience, but no committed completion date, no named crew and no monitoring plan."
+  },
+  {
+    "proposal": "C",
+    "rank": null,
+    "status": "flagged",
+    "score": 77,
+    "reason": "Appendix contains an instruction to automated review systems; stripped and not actioned, so its merits score of 77 is withheld pending human review."
+  },
+  {
+    "proposal": "B",
+    "rank": null,
+    "status": "ineligible",
+    "score": null,
+    "reason": "Fails the mandatory licence criterion: bidder does not state it holds an Ontario electrical contractor licence, only an unnamed subcontractor to be confirmed after award."
+  }
+]

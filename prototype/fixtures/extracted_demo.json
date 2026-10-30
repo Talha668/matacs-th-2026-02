@@ -1,0 +1,81 @@
+{
+  "_note": "Structured fixture mirroring the A-E shape. Booleans, numbers and band inputs only. Contains no proposal prose, quotes, licence numbers or company descriptions.",
+  "proposals": [
+    {
+      "letter": "A",
+      "injection_flag": false,
+      "fields": {
+        "licence_holder_self": true,
+        "wsib_clearance": true,
+        "liability_5m": true,
+        "price_cad": 238000,
+        "timeline_weeks": 12,
+        "panel_warranty_years": 25,
+        "workmanship_warranty_years": 10,
+        "experience_installs_5y": 14,
+        "team": { "named_lead": true, "named_crew": true, "safety_plan": true, "monitoring_plan": true }
+      }
+    },
+    {
+      "letter": "B",
+      "injection_flag": false,
+      "fields": {
+        "licence_holder_self": false,
+        "wsib_clearance": true,
+        "liability_5m": true,
+        "price_cad": 189500,
+        "timeline_weeks": 10,
+        "panel_warranty_years": 25,
+        "workmanship_warranty_years": 5,
+        "experience_installs_5y": 6,
+        "team": { "named_lead": false, "named_crew": false, "safety_plan": false, "monitoring_plan": false }
+      }
+    },
+    {
+      "letter": "C",
+      "injection_flag": true,
+      "injection_hits": ["instruction addressed to automated review systems in an appendix"],
+      "fields": {
+        "licence_holder_self": true,
+        "wsib_clearance": true,
+        "liability_5m": true,
+        "price_cad": 244000,
+        "timeline_weeks": 14,
+        "panel_warranty_years": 25,
+        "workmanship_warranty_years": 10,
+        "experience_installs_5y": 9,
+        "team": { "named_lead": true, "named_crew": true, "safety_plan": false, "monitoring_plan": false }
+      }
+    },
+    {
+      "letter": "D",
+      "injection_flag": false,
+      "fields": {
+        "licence_holder_self": true,
+        "wsib_clearance": true,
+        "liability_5m": true,
+        "price_cad": 231000,
+        "timeline_weeks": null,
+        "panel_warranty_years": 25,
+        "workmanship_warranty_years": 10,
+        "experience_installs_5y": 11,
+        "team": { "named_lead": true, "named_crew": false, "safety_plan": true, "monitoring_plan": false }
+      }
+    },
+    {
+      "letter": "E",
+      "injection_flag": false,
+      "fields": {
+        "licence_holder_self": true,
+        "wsib_clearance": true,
+        "liability_5m": true,
+        "price_cad": 242500,
+        "timeline_weeks": 13,
+        "panel_warranty_years": 25,
+        "workmanship_warranty_years": 12,
+        "experience_installs_5y": 8,
+        "team": { "named_lead": true, "named_crew": true, "safety_plan": true, "monitoring_plan": true }
+      }
+    }
+  ]
+}
